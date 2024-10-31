@@ -1,0 +1,9 @@
+<table *ngIf="agenda.obterFavoritos().length > 0">
+    <tr *ngFor="let cc of agenda.obterFavoritos()">
+        <td class="td-resultados">{{cc.nome}}</td>
+        <td class="td-resultados">{{cc.telefone}}</td>
+        <td class="td-resultados">{{cc.email}}</td>
+        <td class="td-resultados">{{cc.aniversario}}</td>
+        <td class="td-resultados">{{cc.tipo}}</td>
+    </tr>
+</table>

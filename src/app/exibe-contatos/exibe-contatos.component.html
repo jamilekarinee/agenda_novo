@@ -1,0 +1,19 @@
+
+<table *ngIf="agenda.obterTodos().length > 0">
+    <tr>
+        <th class="th-resultados">Nome</th>
+        <th class="th-resultados">Telefone</th>
+        <th class="th-resultados">Email</th>
+        <th class="th-resultados">Aniversário</th>
+        <th class="th-resultados">Tipo</th>
+        <th class="th-resultados">Favorito?</th>
+    </tr>
+    <tr *ngFor="let cc of agenda.obterTodos()">
+        <td class="td-resultados">{{cc.nome}}</td>
+        <td class="td-resultados">{{cc.telefone}}</td>
+        <td class="td-resultados">{{cc.email}}</td>
+        <td class="td-resultados">{{cc.aniversario}}</td>
+        <td class="td-resultados">{{cc.tipo}}</td>
+        <td class="td-resultados">{{cc.favorito}}</td>
+    </tr> 
+</table>
